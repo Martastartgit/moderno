@@ -106,7 +106,6 @@
         }
         button {
             position: absolute;
-            border: none;
             background-color: transparent;
             right: 15px;
             top: 15px;
@@ -127,18 +126,14 @@
     margin-bottom: 60px;
     button {
         padding: 12px 21px;
-        border: none;
         background-color: #fff;
         color: $bg;
-        cursor: pointer;
         & + button {
-            margin-left: 5px;
-            
+            margin-left: 5px;          
         }
         &.mixitup-control-active {
             background-color: $red;
             color: #fff;
-            outline: none;
         }
         
     }
@@ -230,7 +225,6 @@
     button {
         margin: 45px 5px 0;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
-        border: none;
         background-color: #fff;
         color: $bg;
         padding: 20px 30px;
@@ -238,7 +232,6 @@
         &.mixitup-control-active {
             background-color: $red;
             color: #fff;
-            outline: none;
         }
     }
 }
@@ -266,9 +259,7 @@
            background-color: rgb(232, 232, 232);
            font-size: 0;
            width: 16px;
-           height: 16px;
-           outline: none;
-    
+           height: 16px; 
         }
     }
 }
@@ -287,6 +278,7 @@
     justify-content: space-between;
 }
 .advantages__item {
+    margin-top: 40px;
     min-width: 370px;
     text-align: center;
     padding: 0 15px;
@@ -330,18 +322,54 @@
     svg{
        width: 50px; 
     }
-    
 }
 .iconsvg-2 {
     svg {
         width: 70px;
-    }
-    
+    }   
 }
 .iconsvg-3 {
     svg {
         width: 86px;
-    }
-    
+    }    
 }
 
+// end section adantages
+// start section author
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        background-color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 50px;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 285px;
+        width: 100%;
+        span {
+            @include f700;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #fff;
+    }
+}
+// END SECTION AUTHOR
