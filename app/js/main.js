@@ -20,7 +20,7 @@ $(function(){
 
     $(".js-range-slider").ionRangeSlider({
         min: 0,
-        max: 10000,
+        max: 1000,
         from: 0,
         to: 600,
         type: 'double',
