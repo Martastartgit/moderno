@@ -29,7 +29,7 @@
                 href="tel:61 3 8376 6284">+61 3 8376 6284</a>
             </div>
             <div class="header__box">
-              <div class="notification__box">
+              <div class="notification__box header__btn-login--off">
                 <a class="notification header__circle active icon-bell-o" href="#"><span>8</span></a>
                 <div class="circle__menu notification__menu">
                   <a href="#" class="circle__item icon-bell-o icons-color">
@@ -55,7 +55,7 @@
                   </a>
                 </div>
               </div>
-              <div class="message__box">
+              <div class="message__box header__btn-login--off">
                 <a class="message header__circle active icon-envelope-o" href="#"><span>5</span></a>
                 <div class="circle__menu message__menu">
                   <a href="#" class="circle__item icon-envelope-o icons-color">
@@ -85,8 +85,8 @@
                 </div>
               </div>
               <div class="basket__box">
-                <a class="basket header__circle active icon-shopping-cart" href="#"><span>8</span></a>
-                <div class="circle__menu">
+                <a class="basket  header__circle active icon-shopping-cart" href="#"><span>8</span></a>
+                <div class="circle__menu basket__menu">
                   <a href="#" class="circle__item">
                     <img class="circle__img" src="images/content/basket-item.png" alt="">
                     <div class="circle__info">
@@ -114,7 +114,7 @@
                 </div>
               </div>
               <div class="user__box">
-                <a class="user" href="#">
+                <a class="user header__btn-login--off" href="#">
                   <div class="user__inner">
                     <div class="user__avatar">
                       <img src="images/content/user-login.jpg" alt="">
@@ -138,10 +138,11 @@
                   </ul>
                 </div>
               </div>
-              <a class="header__btn header__btn-login header__btn-login--off" href="#">Login</a>
-              <a class="header__btn header__btn-logout header__btn-login--on" href="#">Logout</a>
-              <a class="header__btn header__btn-register header__btn-login--off" href="#">Register</a>
+              <a class="header__btn header__btn-login header__btn-login--on" href="#">Login</a>
+              <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
+              <a class="header__btn header__btn-register header__btn-login--on" href="#">Register</a>
             </div>
+            <div class="header__btn-menu icon-user"></div>
           </div>
         </div>
       </div>
@@ -149,6 +150,11 @@
       <div class="header__menu">
         <div class="container">
           <nav class="menu">
+            <div class="menu__btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
             <ul class="menu__list">
               <li>
                 <a href="#">Home</a>
@@ -185,6 +191,7 @@
         </div>
       </div>
     </header>
+
 
     <section class="search" style="background-image: url(images/search-bg.jpg);">
       <div class="container">
@@ -954,12 +961,14 @@
     <div class="footer__content">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__colum">
+          <div class="footer__colum footer__colum-adress">
             <div class="footer__colum-title">About Company</div>
-            <div class="footer__colum-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen
+            <div class="footer__colum-text">Praesent vel rutrum purus. Nam vel dui eu risus duis
+              dignissim digniSuspen
               disse.Fusce sit amet urna iat.Praesent vel
               rutrum purus.</div>
-            <div class="footer__colum-info">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+            <div class="footer__colum-info">PO Box 16122 Collins Street West Victoria 8007 Australia
+            </div>
             <a class="footer__colum-info footer__info-phone" href="tel:61383766284">+61 3 8376 6284</a>
           </div>
           <div class="footer__colum footer__colum-menu">
@@ -982,7 +991,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="footer__colum">
+          <div class="footer__colum footer__colum-social">
             <div class="footer__colum-title">Follow Us On</div>
             <ul class="footer__social">
               <li><a class="link-facebook" href="#"></a></li>
@@ -1004,11 +1013,13 @@
     </div>
     <div class="footer__copy">
       <div class="container">
-        <div class="footer__copy-text">© 2017 Foxtar market place. Trademarks and brands are the property of their
+        <div class="footer__copy-text">© 2017 Foxtar market place. Trademarks and brands are the property of
+          their
           respective owners.</div>
       </div>
     </div>
   </footer>
+
 
 
 

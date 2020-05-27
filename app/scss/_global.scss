@@ -37,14 +37,17 @@ body {
     color: $text;
     display: flex;
     flex-direction: column;
+    
    
 }
 
 .content {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
+    position: relative;
+    overflow-x: hidden;
 }
 .footer {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .container {
