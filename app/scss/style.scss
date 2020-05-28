@@ -1345,6 +1345,7 @@
     background-color: #fff;
     border:  1px solid #dcdcdc;
     margin-bottom: 28px;
+    margin-top: 55px;
 }
 
 
@@ -1391,6 +1392,47 @@
     font-size: 18px;
     color: $bg;
     @include f700;
+}
+.tabs {
+    display: flex;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    .tab {
+        width: 100%;
+        background-color: #fff;
+        font-size: 16px;
+        color: #70838d;
+        padding: 20px 0;
+        cursor: pointer;
+        & + .tab {
+            border-left: 1px solid #d7d7d7;
+        }
+        
+    }
+}
+.tab_content {
+    background-color: #fff;
+    border-left: 1px solid #d7d7d7;
+    border-top: none;
+    padding: 30px 50px;
+}
+.tab-item {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+.tab-item__list {
+    font-size: 16px;
+    line-height: 36px;
+    color: #707070;
+    column-count: 2;
+    column-gap: 25px;
+    li {
+        max-width: 270px;
+        width: 100%;
+        
+    }
 }
 
 @import '_media';
