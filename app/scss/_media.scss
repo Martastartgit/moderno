@@ -2,7 +2,37 @@
    .wrapper.settings__tabs button { 
         margin-left: 0;
     }
-   
+    .productmini {
+       max-width: 48%;
+    }
+    .product-one__inner {
+        display: block;
+        .aside__item {
+            width: 100%;
+        }
+    }  
+    .product-page__aside {
+        margin-right: 0px;
+    }
+    .product-one__content {
+        margin-right: 10px;
+        max-width: 100%;
+    }
+    .product-one__img {
+        max-width: 100%;
+    }
+    .product-one {
+        padding-bottom: 50px;
+    }
+    .product-page__inner {
+        display: block;
+        .aside__item {
+            width: 100%;
+        }
+    }
+    .top-sellers {
+        display: none;
+    }
 }
 @media (max-width: 1135px) {
     .footer__inner {
@@ -48,8 +78,37 @@
     .contact__inner .contact__info {
         margin-right: 20px;
     }   
+    .search__inner-title {
+        font-size: 35px; 
+        line-height: 45px;
+    }
+    .search__inner-text {
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
 }
 
+@media (max-width: 920px) {
+    .profile__inner {
+        flex-direction: column;
+    }   
+    .profile__content {
+        order: -1;
+    }
+    .profile__aside {
+       max-width: 100%;  
+    }
+    .profile__aside-link {
+        width: 290px;
+    }
+    .profile__aside .aside__item {
+        width: 100%;
+    }
+    .profile__aside-message::before {
+        left: 60px;
+        top: 17px;
+    }
+}
 
 @media (max-width: 845px) {
     .footer__colum-social {
@@ -77,6 +136,18 @@
     .contact__inner .contact__box {
         display: block;
     }   
+    .product-page__content .product__item {
+        flex-basis: calc(50% - 20px);  
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .product-page__items {
+        margin-left: -20px;
+    }
+    .product__item.list {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 815px){
@@ -114,7 +185,24 @@
             }
         }
     }
+    .product-one__box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .product-one__link {
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .product-one__more-title {
+        margin-top: 35px;
+    }
+    .icon-th-list{
+        display: none;
+    }
 }
+
+
 @media (max-width: 680px){
     .basket__menu {
         right: 0;
@@ -144,7 +232,7 @@
         padding: 16px 10px 17px 14px;
     }
 }
-@media (max-width: 640px){
+@media (max-width: 640px) {
     .notification__box,
     .message__box{
         display: none;
@@ -173,8 +261,67 @@
     .contact__inner .contact__form-title {
         font-size: 20px; 
     }
-    
+    .profile__banner {
+        min-height: 260px;
+    }
+    .profile__items {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .profile__item {
+        width: 100%;
+        border-left: none;
+        & + .profile__item {
+            border-top: 1px solid #dedede;
+        }
+    }  
+    .profile__banner-inner {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .product-one__inner .tab_content {
+        padding: 20px 12px;
+    }
+    .productmini {
+        max-width: 100%;
+    }
+    .wrapper {
+        .tab-item__list {
+            font-size: 14px;   
+            column-count: 1;     
+            column-gap: 0px;  
+        }
+        .tabs .tab {
+            padding: 15px 0;
+        }
+    }
+    .product-one__link  {
+        display: block;
+        margin-bottom: 15px;
+        a {
+            width: 100%;
+            margin-bottom: 15px; 
+            & + a {
+                margin-left: 0;
+            }
+        }
+    }
+    .product-one__title {
+        font-size: 23px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .product-one__img {
+        height: 300px;
+    }
+    .product-page__content .product__item {
+        flex-basis: 100%;
+        max-width: 100%;  
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 }
+    
 @media (max-width: 540px) {
     .page-404__text {
         font-size: 15px;
@@ -210,6 +357,18 @@
     .page-box__title { 
         font-size: 20px;
         padding: 15px 15px;
+    }
+    .wrapper {
+        .tabs {
+            display: block;
+            .tab {
+                display: block;
+                & + .tab {
+                    border-top: 1px solid #d7d7d7;
+                    border-left: none;
+                }   
+            } 
+        }
     }
 }
 
@@ -369,6 +528,13 @@
     }
     .menu__btn{
         left: 10px;
+    }
+    .personal-box {
+        padding: 30px 15px 25px;
+    }
+    .personal-box__title {
+        margin-bottom: 20px;
+        font-size: 18px;
     }
 }
 @media (max-width: 355px){

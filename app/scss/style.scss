@@ -1180,21 +1180,21 @@
 }
 .product-page__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-left: -30px;
 }
 .product-page__content {
     .product__item {
-        max-width: 270px;
+        flex-basis: calc(33.3333% - 30px);
         width: 100%;
         background-color: #fff;
         transition: all;
-        
+        margin-left: 30px;     
     }
     .product__item-img {
         min-height: 180px;
-
     }
     .product__item-content {
         padding: 10px 20px;
@@ -1284,6 +1284,7 @@
 }
 .product__item{
     &.list {
+        flex-basis: 100%;
         max-width: 100%;
         .product__item-img  {
             width: 240px;
